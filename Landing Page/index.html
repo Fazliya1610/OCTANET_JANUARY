@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Toilet Fundraiser</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>Transform Lives: Building Public Toilets for a Healthy Community</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#donate">Donate</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay">
+      <h2>Join Us in Building Public Toilets for a Healthy Community</h2>
+      <a href="#donate"><button class="cta-button">Donate Now</button></a>
+    </div>
+  </section>
+
+
+  
+  <section id="home" class="home">
+    <h2>Welcome to Our Public Toilet Fundraiser Campaign</h2>
+    <p>Your support makes a difference in creating a healthier and more sanitary community.</p>
+  
+    <section class="impact-section">
+      <h3>See the Impact of Your Contribution</h3>
+      <p>Learn how your donation helps us build and maintain public toilets for the community.</p>
+      <img src="building.jpg" alt="Public Toilet">
+    </section>
+  
+    <section class="personal-stories">
+      <h3>Real Stories, Real Change</h3>
+      <p>In Coimbatore, without proper water supply, doors and buckets, 
+        public washrooms in the city are of hardly any use to the public. 
+        It's hig time the city corporation took steps to rectify the issues and ensure their proper maintenance.</p>
+      <img src="lack.webp" alt="Lack of maintenance">
+      <br><br>
+        <p>Read personal stories from community members whose lives have been positively impacted by accessible public toilets.</p>
+        <img src="built.webp" alt="Public Toilet">
+    </section>
+</section>
+
+<section id="about">
+    <section class="testimonials">
+        <h3>What Our Supporters Say</h3>
+        <p>Discover testimonials from donors and community leaders who believe in the importance of this initiative.</p>
+      
+        <div class="testimonial-card">
+          <p>"I am proud to support such a vital cause. Together, we can make a lasting impact on our community."</p>
+          <p class="testimonial-author">Parthiban</p>
+        </div>
+      
+        <div class="testimonial-card">
+          <p>"This initiative has brought positive change to our community. It's inspiring to see the difference we can make."</p>
+          <p class="testimonial-author">Joseph</p>
+        </div>
+      </section>
+      
+    <section class="progress-bar">
+        <h3>Track Our Progress</h3>
+        <p>Stay updated on our fundraising progress. Together, we can achieve our goal!</p>
+        
+        <div class="progress-container">
+          <div class="progress" id="progress-bar"></div>
+          <span id="progress-text">28%</span>
+        </div>
+      </section>
+      
+      <section class="trust-section">
+        <h3>Our Commitment to Trust and Security</h3>
+        <p>Explore the badges that represent our commitment to ensuring a secure and trustworthy environment for our supporters.</p>
+      
+        <div class="badge-container">
+          <img src="guarantee.jpg" alt="Satisfaction 100% Guarantee">
+          <img src="secure.jpg" alt="Secured">
+        </div>
+      </section>
+      
+</section>
+
+  <section id="donate" class="donation-form">
+    <h2>Support the Cause</h2>
+    <p>Your contribution makes a difference. Help us build public toilets for a healthier community.</p>
+  
+    <form onsubmit="submitDonation()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="amount">Donation Amount:</label>
+      <input type="number" id="amount" name="amount" min="1" required>
+  
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="credit_card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank_transfer">Bank Transfer (Account Number: XXXXXXXX)</option>
+      </select>
+  
+      <label for="account_number">Account Number (for Bank Transfer):</label>
+      <input type="text" id="account_number" name="account_number">
+
+      <a href="thank-you" ><button type="submit" id="donateButton" class="cta-button" onclick="submitDonation()">Donate Now</button></a>
+    </form>
+  </section>
+
+  <section id="thank-you" class="thank-you-section">
+    <h3>Thank You for Your Support!</h3>
+    <p>We appreciate your generous contribution to our public toilet initiative. Your support makes a significant impact on our community.</p>
+    <img src="thankyou.webp" alt="Thank You Image">
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us through the following contact channels:</p>
+
+    <div class="contact-details">
+      <p>Mobile: <span class="phone-number">123-456-7890</span></p>
+      <p>Telephone: <span class="phone-number">(555) 123-4567</span></p>
+      <p>Email: <span class="email">mailid@gmail.com</span></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2024 Public Toilet Fundraiser | Follow us on <a href="#" target="_blank">Social Media</a>
+  </footer>
+
+</body>
+
+</html>

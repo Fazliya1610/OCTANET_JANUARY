@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do App</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Task">
+                <input type="date" id="dueDateInput">
+                <input type="time" id="dueTimeInput">
+                <select id="ampmInput">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <button id="addTaskBtn">Add</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Time</th>
+                        <th>Edit</th>
+                        <th>Complete</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList"></tbody>
+            </table>
+            <div id="editFormContainer" class="hidden">
+                <h2>Edit Task</h2>
+                <input type="text" id="editTaskInput" placeholder="Task">
+                <input type="date" id="editDueDateInput">
+                <input type="time" id="editDueTimeInput">
+                <select id="editAmpmInput">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <button id="saveEditBtn">Save</button>
+            </div>
+        </div>
+    </body>
+</html>
